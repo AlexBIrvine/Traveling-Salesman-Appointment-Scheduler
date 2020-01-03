@@ -6,6 +6,13 @@ If you change the location of your system to Germany, the login screen will disp
 
 We were not given instruction on how this should look or operate. A CLI program would have been a valid submission.
 
+## Technologies used:
+
+<u>**Programming language**</u>: Java, JavaFX, SQL  
+<u>**Databases**</u>: MySQL, SQLite  
+<u>**Design Patterns**</u>: Data Access Object, MVC view pattern  
+<u>**Tools Used**</u>: NetBeans 8.2 to write & compile (per WGU requirement), MYSQL Workbench 8, SQLite studio, SceneBuilder
+
 <u>**NOTE**</u>  
 This program has the following shortcomings:
 
