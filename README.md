@@ -18,6 +18,7 @@ This program has the following shortcomings:
 
 - **Single user only program**. The database is accessed at the start and closing only. If multiple people used this program at once, there would be data conflicts.
 - **Prone to SQL injections**. SQL queries are passed to the database through input fields. SQL attacks like [Little Bobby Tables by XKCD](https://xkcd.com/327/) would work on this program.
+- The username & password are both "test".  
 
 ---
 
