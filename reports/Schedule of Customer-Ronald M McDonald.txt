@@ -1,0 +1,7 @@
+User{ Ronald M McDonald } Appointments
+Created on: Wed Nov 13 19:50:50 EST 2019
+---------------------------------------------------------------------------------
+
+2019/11/05		09:00 AM - 10:00 AM		America/New_York		Online
+2019/11/05		10:00 AM - 10:30 AM		America/New_York		Phone
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewControllers.SelectCustomerRecordController">
+   <children>
+      <VBox prefHeight="420.0" prefWidth="600.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="140.0" prefWidth="200.0">
+               <children>
+                  <Label text="Select Customer">
+                     <font>
+                        <Font name="Arial Bold" size="62.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="294.0" prefWidth="600.0">
+               <children>
+                  <ListView fx:id="customerList" prefHeight="140.0" prefWidth="480.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="140.0" prefWidth="200.0" spacing="25.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#CancelButtonPressed" text="Cancel" />
+                  <Button mnemonicParsing="false" onAction="#editButtonPressed" text="Edit Customer">
+                     <HBox.margin>
+                        <Insets right="25.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

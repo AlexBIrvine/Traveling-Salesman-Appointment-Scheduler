@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewControllers.DetailedAppointmentRecordController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="82.0" prefWidth="600.0">
+         <children>
+            <Label text="Edit Appointment">
+               <font>
+                  <Font name="Arial Bold" size="46.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutY="82.0" prefHeight="294.0" prefWidth="600.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label prefWidth="55.0" text="Type" />
+                  <TextField fx:id="typeField" prefHeight="25.0" prefWidth="390.0">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets left="50.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label prefWidth="55.0" text="Date" />
+                  <DatePicker fx:id="startDate" prefHeight="25.0" prefWidth="180.0" promptText="Select Date" />
+               </children>
+               <VBox.margin>
+                  <Insets left="50.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label prefWidth="55.0" text="Start" />
+                  <ComboBox fx:id="startHour" prefHeight="25.0" prefWidth="80.0" promptText="Hours" />
+                  <ComboBox fx:id="startMinute" prefHeight="25.0" prefWidth="90.0" promptText="Minutes" />
+               </children>
+               <VBox.margin>
+                  <Insets left="50.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label prefWidth="55.0" text="End" />
+                  <ComboBox fx:id="endHour" prefHeight="25.0" prefWidth="80.0" promptText="Hours" />
+                  <ComboBox fx:id="endMinute" prefHeight="25.0" prefWidth="90.0" promptText="Minutes" />
+               </children>
+               <VBox.margin>
+                  <Insets left="50.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="251.0" prefWidth="600.0" spacing="10.0">
+               <children>
+                  <Label prefWidth="55.0" text="Customer" />
+                  <ListView fx:id="customerList" prefHeight="187.0" prefWidth="390.0" />
+               </children>
+               <VBox.margin>
+                  <Insets left="50.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutY="356.0" prefHeight="82.0" prefWidth="600.0">
+         <children>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#CancelButtonPressed" text="Cancel" />
+                  <Button mnemonicParsing="false" onAction="#SaveButtonPressed" text="Save Changes">
+                     <HBox.margin>
+                        <Insets right="100.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
